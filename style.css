@@ -1,1 +1,59 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#game{
+	width: 1000px;
+	height: 200px;
+	border: 1px solid black;
 
+}
+#character {
+	width: 40px;
+	height: 40px;
+	background-image: "block";
+	background-color: lightblue;
+	position: relative;
+	top: 160px;
+.animate {
+	animation: jump, 500ms;}
+}
+@keyframes jump {
+	0%{top: 150px;}
+	30%{top: 100px;}
+	70%{top: 100px;}
+	100%{top: 150px;}
+
+function move(dir) {
+if (dir = "up") {character.speedY= "jump" };
+if (dir = "left") {character.speedX= -1 };
+if (dir = "right") {character.speedX= 1 };
+}
+function clearmove() {
+	character.speedX = 0;
+	character.speedY = 0;}
+}
+#block {
+	width: 40px;
+	height: 40px;
+	background-image: "block";
+	background-color: red;
+	position: relative;
+	top: 120px;
+	left: 480px;
+	animation: block is infinite linear;
+}
+@keyframes block{
+	0%{left: 480px;}
+	100%{left: -40;}
+}
+#home {
+	width: 60px;
+	height: 10px;
+	background-image: "home";
+	background-color: black;
+	position: relative;
+	top: 110px;
+	left: 940px;
+	}
+}
