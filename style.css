@@ -9,26 +9,27 @@
 
 }
 #character {
+	character-image= <img src="https://github.com/Aparicioj03/Prairiedogcomicgame/blob/images/1643751907166.png">;
 	width: 40px;
 	height: 40px;
 	background-image: "block";
 	background-color: lightblue;
 	position: relative;
 	top: 160px;
-.animate {
-	animation: jump, 500ms;}
+@animate {
+	animate: jump, 500ms;}
 }
 @keyframes jump {
 	0%{top: 150px;}
 	30%{top: 100px;}
 	70%{top: 100px;}
 	100%{top: 150px;}
-
-@keyframes move(dir) {
+}
+function move(dir) {
 if (dir = "up") {character.speedY= "jump" };
 if (dir = "left") {character.speedX= -1 };
 if (dir = "right") {character.speedX= 1 };
-}
+
 function clearmove() {
 	character.speedX = 0;
 	character.speedY = 0;}
