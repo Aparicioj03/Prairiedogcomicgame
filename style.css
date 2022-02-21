@@ -24,7 +24,7 @@
 	70%{top: 100px;}
 	100%{top: 150px;}
 
-function move(dir) {
+@keyframes move(dir) {
 if (dir = "up") {character.speedY= "jump" };
 if (dir = "left") {character.speedX= -1 };
 if (dir = "right") {character.speedX= 1 };
